@@ -25,10 +25,6 @@ const Gist = ({ gistId, file }: Props) => {
       <script src="${url}"></script>`;
   }, [url]);
 
-  React.useEffect(() => {
-    console.log(document.body.scrollHeight);
-  }, []);
-
   return (
     <iframe
       ref={ref}

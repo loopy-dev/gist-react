@@ -1,11 +1,11 @@
 {
   "name": "gist-react",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build:vite": "tsc && vite build",
+    "build": "rollup -c",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -14,6 +14,10 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.1",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.59.0",
@@ -25,6 +29,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
     "prettier": "^2.8.8",
+    "rollup": "^3.24.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
   },
@@ -36,5 +42,10 @@
     "name": "Junhyuck Ko",
     "email": "mrbartrns@naver.com",
     "url": "https://portfolio-mrbartrns.vercel.app"
-  }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.es.js",
+  "browser": "./dist/index.umd.js",
+  "types": "./dist/index.d.ts",
+  "private": "false"
 }
