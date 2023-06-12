@@ -26,7 +26,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "gist-react": "^0.0.8",
+    "gist-react": "^0.0.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

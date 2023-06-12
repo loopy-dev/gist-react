@@ -1600,10 +1600,10 @@ get-stream@^6.0.0:
   resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-6.0.1.tgz#a262d8eef67aced57c2852ad6167526a43cbf7b7"
   integrity sha512-ts6Wi+2j3jQjqi70w5AlN8DFnkSwC+MqmxEzdEALB2qXZYV3X/b1CTfgPLGJNMeAWxdPfU8FO1ms3NUfaHCPYg==
 
-gist-react@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/gist-react/-/gist-react-0.0.8.tgz#cc2fdcbdd0c6f833346af9f855750c7e7491b29b"
-  integrity sha512-eQnTXyQ21hTz5yfopYJlOYtG8TLDe57zinKSWkLsy6SjxSCeLPFL5bp4GR+tUaPvKYlMR1XO5/7EB0c2BglcwQ==
+gist-react@^0.0.14:
+  version "0.0.14"
+  resolved "https://registry.yarnpkg.com/gist-react/-/gist-react-0.0.14.tgz#956ba8a45eeb4ef767773fb26d4c18fe5b0dcf25"
+  integrity sha512-zve+TwD7eN4ATGCyPTNq0bQfcOoJQJdRnB04SYNZcSJv27FcoDlt0WSaXzGBZjb5TXTEV9hSavBxxKJQrPt+PQ==
   dependencies:
     react "^18.2.0"
     react-dom "^18.2.0"
