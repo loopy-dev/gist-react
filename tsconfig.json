@@ -18,9 +18,6 @@
     "sourceMap": false,
     "outDir": "./dist",
     "baseUrl": "./",
-    "paths": {
-      "~/*": ["src/*"]
-    },
 
 
     /* Linting */
@@ -29,6 +26,5 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*", "examples/main.tsx", "examples/App.tsx"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src/**/*", "examples/**/*"]
 }

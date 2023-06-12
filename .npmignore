@@ -1,10 +1,11 @@
 src/
 examples/
 rollup.config.js
-vite.config.ts
+webpack.config.js
 tsconfig.json
 tsconfig.node.json
 yarn.lock
 .editorconfig
 .eslintrc
 .prettierrc
+.babelrc
