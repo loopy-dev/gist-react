@@ -8,7 +8,7 @@ import pkg from './package.json' assert { type: 'json' };
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
 export default {
-  input: 'src/index.ts',
+  input: './src/index.ts',
   output: [
     {
       dir: './dist',
@@ -26,7 +26,7 @@ export default {
       format: 'umd',
     },
   ],
-  external: [/node_modules/],
+  external: [/node_modules/, /examples/],
   plugins: [
     resolve({
       extensions,
@@ -38,6 +38,8 @@ export default {
     }),
     commonjs({ include: 'node_modules/**' }),
     PeerDepsExternalPlugin(),
-    typescript({ tsconfig: './tsconfig.json' }),
+    typescript({
+      tsconfig: './tsconfig.json',
+    }),
   ],
 };

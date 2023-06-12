@@ -1,3 +1,3 @@
-import Gist from './Gist';
+import { Gist } from './Gist';
 
 export default Gist;

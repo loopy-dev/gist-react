@@ -1,11 +1,11 @@
 {
   "name": "gist-react",
-  "version": "0.0.4",
+  "version": "0.0.8",
   "description": "Embed the gist anywhere in your latest React project.",
   "type": "module",
   "scripts": {
     "dev": "webpack-dev-server --mode development --open --hot --progress",
-    "build": "rollup -c",
+    "build": "rollup -c --exclude examples",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "prepublishOnly": "npm run build"
   },
@@ -72,5 +72,5 @@
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
   "browser": "./dist/index.umd.js",
-  "types": "./dist/index.d.ts"
+  "types": "./dist/types/index.d.ts"
 }
