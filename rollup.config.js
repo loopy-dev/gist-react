@@ -3,7 +3,6 @@ import typescript from '@rollup/plugin-typescript';
 import resolve from '@rollup/plugin-node-resolve';
 import PeerDepsExternalPlugin from 'rollup-plugin-peer-deps-external';
 import babel from '@rollup/plugin-babel';
-import pkg from './package.json' assert { type: 'json' };
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
@@ -12,18 +11,9 @@ export default {
   output: [
     {
       dir: './dist',
-      format: 'cjs',
+      format: 'es',
       preserveModules: true,
       preserveModulesRoot: 'src',
-    },
-    {
-      file: pkg.module,
-      format: 'es',
-    },
-    {
-      name: pkg.name,
-      file: pkg.browser,
-      format: 'umd',
     },
   ],
   external: [/node_modules/, /examples/],

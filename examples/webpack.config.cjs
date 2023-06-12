@@ -8,9 +8,9 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
-  entry: './examples/index.tsx',
+  entry: './src/index.tsx',
   output: {
-    path: path.resolve(__dirname, 'examples', 'build'),
+    path: path.resolve(__dirname, 'build'),
     publicPath: '/',
     clean: true,
   },
@@ -29,7 +29,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, 'examples/index.html'),
+      template: path.resolve(__dirname, 'src/index.html'),
     }),
     new CopyWebpackPlugin({
       patterns: [

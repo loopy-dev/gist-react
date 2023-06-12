@@ -5,7 +5,7 @@ interface Props {
   file?: string;
 }
 
-export const Gist = ({ gistId, file }: Props) => {
+const Gist = ({ gistId, file }: Props) => {
   const ref = React.useRef<HTMLIFrameElement>(null);
   const idBase = `gist-${gistId}`;
   const iframeId = file ? idBase.concat(`-${file}`) : idBase;
@@ -39,3 +39,5 @@ export const Gist = ({ gistId, file }: Props) => {
     />
   );
 };
+
+export default Gist;

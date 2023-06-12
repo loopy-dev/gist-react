@@ -1,4 +1,4 @@
-import Gist from '../src/.';
+import Gist from 'gist-react';
 
 const App = () => {
   return (
