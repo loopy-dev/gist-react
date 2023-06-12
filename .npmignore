@@ -1,9 +1,8 @@
-src/
+dist/
 examples/
 rollup.config.js
 webpack.config.js
 tsconfig.json
-tsconfig.node.json
 yarn.lock
 .editorconfig
 .eslintrc
