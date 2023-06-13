@@ -2,8 +2,6 @@
 
 Embed the gist anywhere in your latest React project.
 
-!https://img.shields.io/badge/License-MIT-blue.svg
-
 ## Table of Contents
 
 - **[Overview](#overview)**
@@ -71,4 +69,5 @@ If you encounter any issues, you can raise them using GitHub issues.
 
 ## License
 
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 This project is licensed under the MIT License.
