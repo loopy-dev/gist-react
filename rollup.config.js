@@ -3,6 +3,7 @@ import typescript from '@rollup/plugin-typescript';
 import resolve from '@rollup/plugin-node-resolve';
 import PeerDepsExternalPlugin from 'rollup-plugin-peer-deps-external';
 import babel from '@rollup/plugin-babel';
+import cleanup from 'rollup-plugin-cleanup';
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
@@ -31,5 +32,6 @@ export default {
     typescript({
       tsconfig: './tsconfig.json',
     }),
+    cleanup(),
   ],
 };
