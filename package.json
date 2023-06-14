@@ -1,6 +1,6 @@
 {
   "name": "gist-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Embed the gist anywhere in your latest React project.",
   "type": "module",
   "scripts": {
