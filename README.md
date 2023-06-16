@@ -12,7 +12,7 @@ Embed the gist anywhere in your latest React project.
 
 ## Overview
 
-react-gist helps you embed gists more conveniently in React, Gatsby, and Next.js environments.
+gist-react helps you embed gists more conveniently in React(include Gatsby, Next.js, etc) environments.
 
 ## Features
 
