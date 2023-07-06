@@ -19,6 +19,7 @@ gist-react helps you embed gists more conveniently in React(include Gatsby, Next
 - Supports the latest React - Uses the latest version of the React API.
 - Written in TypeScript.
 - Convenient embedding method.
+- Better Performance in rendering process.
 
 ## Getting Started
 
@@ -29,7 +30,7 @@ You can use the component as follows:
 ```tsx
 import { Gist } from 'gist-react';
 
-const gistId = 'abcdefg';
+const gistId = 'your-gist-id';
 
 const App = () => {
   return <Gist gistId={gistId} />;
@@ -43,7 +44,7 @@ If there are multiple files in a gist, all files will be exposed in the componen
 ```tsx
 import { Gist } from 'gist-react';
 
-const gistId = 'abcdefg';
+const gistId = 'your-gist-id';
 const file = 'file.js';
 
 const App = () => {
@@ -70,4 +71,5 @@ If you encounter any issues, you can raise them using GitHub issues.
 ## License
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 This project is licensed under the MIT License.
